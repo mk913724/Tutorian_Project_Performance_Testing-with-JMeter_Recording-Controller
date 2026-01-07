@@ -1,4 +1,7 @@
-**Bug Report 1**
+## **Bug Report**
+
+### **Bug Report 1**
+
 **Bug ID:** PERF-001
 **Title:** Home Page shows high response time under normal load
 **Category:** Performance
@@ -6,40 +9,44 @@
 **Severity:** High
 **Priority:** High
 
-**Environment**
-Application: Tutorian
-Test Tool: Apache JMeter
-Request Type: HTTP GET
-Controller: Recording Controller
+### **Environment**
 
-**Description**
-During performance testing, the Home Page exhibited high response time even with minimal load. Multiple requests exceeded the acceptable response time threshold.
+* **Application:** Tutorian
+* **Test Tool:** Apache JMeter
+* **Request Type:** HTTP GET
+* **Controller:** Recording Controller
 
-**Steps to Reproduce**
+### **Description**
 
-1. Open JMeter
-2. Execute recorded HTTP request for Home Page
-3. Run test using default Thread Group
-4. Observe response time in View Results Tree / Summary Report
+During performance testing, the Home Page exhibited high response time even under minimal load conditions. Multiple HTTP requests exceeded the acceptable response time threshold.
 
-**Expected Result**
+### **Steps to Reproduce**
 
-* Home Page should load within ≤ 3 seconds
-* No warning status should appear
+1. Open Apache JMeter
+2. Execute the recorded HTTP request for the Home Page
+3. Run the test using the default Thread Group
+4. Observe response time in *View Results Tree* or *Summary Report*
 
-**Actual Result**
+### **Expected Result**
 
-* Response time exceeded 3–5 seconds
-* Some samplers marked as Warning
-* Large response size observed
+* Home Page should load within **≤ 3 seconds**
+* No warning status should be displayed
 
-**Impact**
+### **Actual Result**
 
-* Poor user experience
-* May increase bounce rate on first visit
+* Response time exceeded **3–5 seconds**
+* Some samplers were marked as **Warning**
+* Large response size was observed
+
+### **Impact**
+
+* Poor user experience on initial page load
+* Increased risk of user bounce rate
 
 ---
- **Bug Report 2**
+
+### **Bug Report 2**
+
 **Bug ID:** FUNC-002
 **Title:** Terms & Conditions page shows warning status during performance test
 **Category:** Functional / Performance
@@ -47,36 +54,41 @@ During performance testing, the Home Page exhibited high response time even with
 **Severity:** Medium
 **Priority:** Medium
 
-**Environment**
-Application: Tutorian
-Tool: Apache JMeter
-Request Type: HTTP GET
+### **Environment**
 
-**Description**
-The Terms & Conditions page returned Warning status during performance testing, indicating unstable behavior under repeated requests.
+* **Application:** Tutorian
+* **Test Tool:** Apache JMeter
+* **Request Type:** HTTP GET
 
-**Steps to Reproduce**
+### **Description**
 
-1. Add Terms & Conditions page URL in HTTP Request
-2. Run the test using recorded navigation
-3. Check sampler results
+During performance testing, the Terms & Conditions page returned a Warning status, indicating unstable response behavior under repeated HTTP requests.
 
-**Expected Result**
+### **Steps to Reproduce**
+
+1. Add the Terms & Conditions page URL in an HTTP Request sampler
+2. Execute the test using recorded navigation
+3. Review sampler results in JMeter listeners
+
+### **Expected Result**
 
 * Page should respond consistently
-* No warning or delay should occur
+* No warning or response delay should occur
 
-**Actual Result**
+### **Actual Result**
 
 * Warning status observed
-* Response time fluctuates across requests
+* Response time fluctuated across multiple requests
 
-**Impact**
+### **Impact**
 
-* Indicates backend or server inefficiency
-* May cause inconsistent page loading
+* Indicates possible backend or server inefficiency
+* May result in inconsistent page loading for users
 
- **Bug Report 3**
+---
+
+### **Bug Report 3**
+
 **Bug ID:** PERF-003
 **Title:** Refund Policy page has very high response time and warning status
 **Category:** Performance
@@ -84,32 +96,34 @@ The Terms & Conditions page returned Warning status during performance testing, 
 **Severity:** High
 **Priority:** High
 
-**Environment**
-Application: Tutorian
-Test Tool: Apache JMeter
-Request Type: HTTP GET
+### **Environment**
 
-**Description**
-Refund Policy page showed very high response time and multiple Warning statuses during test execution.
+* **Application:** Tutorian
+* **Test Tool:** Apache JMeter
+* **Request Type:** HTTP GET
 
-**Steps to Reproduce**
+### **Description**
 
-1. Execute HTTP request for Refund Policy page
-2. Run test under sequential load
-3. Analyze Summary Report
+The Refund Policy page demonstrated significantly high response time along with multiple Warning statuses during performance test execution.
 
-**Expected Result**
+### **Steps to Reproduce**
 
-* Page should load within acceptable response time
-* No warnings should be present
+1. Execute the HTTP request for the Refund Policy page
+2. Run the test under sequential load conditions
+3. Analyze results using the Summary Report
 
-**Actual Result**
+### **Expected Result**
 
-* Response time exceeded threshold significantly
+* Page should load within acceptable response time limits
+* No warning status should be present
+
+### **Actual Result**
+
+* Response time exceeded the defined threshold
 * Warning status detected repeatedly
 
-**Impact**
+### **Impact**
 
-* Critical legal page loading slowly
-* Trust and compliance risk for users
+* Critical legal information page loads slowly
+* Potential trust, usability, and compliance risks
 

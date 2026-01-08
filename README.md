@@ -87,6 +87,6 @@ Tutorian-JMeter-Performance-with-Recording-Controller/
 ## **Reports**
 
 * [Test Execution Summary](https://github.com/mk913724/Tutorian-JMeter-Performance-with-Recording-Controller/blob/main/Reports/Summary_Report.md)
-* [Defects Summary](https://github.com/mk913724/Tutorian-JMeter-Performance-with-Recording-Controller/blob/main/Reports/Summary_Report.md)
-* JMeter Listener Results
-* Performance Analysis Observations
+*  [Pictorial Defect Summary](https://github.com/mk913724/Tutorian-JMeter-Performance-with-Recording-Controller/blob/main/Reports/Defects_Summary.png)
+*  [Pictorial Test Execution Summary](https://github.com/mk913724/Tutorian-JMeter-Performance-with-Recording-Controller/blob/main/Reports/Test_executation_Summary.png)
+* [JMeter Listener Results](https://github.com/mk913724/Tutorian-JMeter-Performance-with-Recording-Controller/blob/main/Reports/JMeter%20Listener%20Results.png)

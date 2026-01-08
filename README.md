@@ -53,24 +53,23 @@ The project also tracks **performance defects** identified during test execution
 ## **Folder Structure**
 
 ```
-Tutorian-JMeter-Performance-with-Recording-Controller/
+Tutorian_Project_Performance_Testing-with-JMeter_Recording-Controller/
 │
-├── Test_Plan/
-│   └── Performance_Test_Plan.md
+├── Documentation/           
+│   ├── test_plan.md
+│   ├── test_cases.md
+│   └── bug_report.md
 │
-├── Test_Cases/
-│   └── Performance_Test_Cases.md
+├── JMeter_Scripts/         
+│   └── Tutorian project with Jmeter_Recording_Controller .jmx
 │
-├── Bug_Reports/
-│   └── Performance_Bug_Report.md
+├── Reports/                
+│   ├── summary_report.md
+│   ├── test_and_defect_summary_report.png
+│   └── JMeter_Listener_Results.png
 │
-├── Reports/
-│   └── Summary_Report.md
-│
-├── JMeter_Scripts/
-│   └── Tutorian_Performance_Test.jmx
-│
-└── README.md
+└── README.md               
+
 ```
 
 ---
